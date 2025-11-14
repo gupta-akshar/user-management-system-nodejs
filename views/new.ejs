@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New User</title>
+ <link rel="stylesheet" href="/css/new.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Create New User</h2>
+    <form method="post" action="/users">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Enter username" />
+      </div>
+
+      <div>
+        <label for="email">E-Mail:</label>
+        <!-- added id="email" -->
+        <input type="email" name="email" id="email" placeholder="Enter email" required />
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <!-- added id="password" -->
+        <input type="password" name="password" id="password" placeholder="Enter password" required />
+      </div>
+
+      <div id="username-status"></div>
+
+      <!-- submit disabled by default -->
+      <button type="submit" disabled>Submit</button>
+    </form>
+
+    <a href="/users" class="back-link">← Back to Users</a>
+  </div>
+
+<script src="/js/new.js"></script>
+
+</body>
+</html>

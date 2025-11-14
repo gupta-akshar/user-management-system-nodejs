@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | User Management</title>
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the User Management Dashboard</h1>
+
+    <div class="count-box">
+      <p>Total Registered Users</p>
+      <h2><%= count %></h2>
+    </div>
+
+    <div class="actions">
+      <a href="/users" class="view-users">View All Users</a>
+      <a href="/users/new" class="add-user">Add New User</a>
+    </div>
+
+    <div class="recent">
+      <h3>Recently Added Users</h3>
+      <% if (recentUsers.length > 0) { %>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Username</th>
+          </tr>
+          <% recentUsers.forEach(user => { %>
+            <tr>
+              <td><%= user.id %></td>
+              <td><%= user.email %></td>
+              <td><%= user.username %></td>
+            </tr>
+          <% }) %>
+        </table>
+      <% } else { %>
+        <p class="no-data">No users added yet.</p>
+      <% } %>
+    </div>
+  </div>
+</body>
+</html>

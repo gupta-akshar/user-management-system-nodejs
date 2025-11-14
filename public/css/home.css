@@ -1,0 +1,102 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+}
+
+.count-box {
+    display: inline-block;
+    background-color: white;
+    padding: 25px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+}
+
+.count-box h2 {
+    margin: 0;
+    color: #007bff;
+    font-size: 42px;
+}
+
+.actions {
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.view-users {
+    background-color: #007bff;
+}
+.view-users:hover {
+    background-color: #0056b3;
+}
+
+.add-user {
+    background-color: #28a745;
+}
+.add-user:hover {
+    background-color: #1e7e34;
+}
+
+.recent {
+    margin: 60px auto;
+    width: 60%;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.recent h3 {
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.no-data {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+}

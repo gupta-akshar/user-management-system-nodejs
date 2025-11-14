@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e9f0ff;
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form {
+    display: inline-block;
+    margin: 0;
+}
+
+form[action*="edit"] button {
+    background-color: #28a745;
+    color: white;
+}
+
+form[action*="edit"] button:hover {
+    background-color: #1e7e34;
+}
+
+form[action*="delete-confirm"] button {
+    background-color: #dc3545;
+    color: white;
+}
+
+form[action*="delete-confirm"] button:hover {
+    background-color: #b02a37;
+}
